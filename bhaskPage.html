@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="Scripts/bhaskPage.js"></script>
+    <link rel="stylesheet" href="Styles/default.css">
+    <link rel="stylesheet" href="Styles/bhaskPage.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@900&display=swap');
+    </style>
+    <title>Bhaskara</title>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <div class="headerContentContainer">
+            <div class="headerTextContainer">
+                <h1>Power</h1>
+            </div>
+            <div class="headerMenuContainer">
+                <ul>
+                    <li><a href="imcPage.html">IMC</a></li>
+                    <li><a href="bhaskPage.html">Bhaskara</a></li>
+                    <li><a href="calcPage.html">Calculadora</a></li>
+                    <li><a href="notaPage.html">Nota Média</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <div class="bodyContainer">
+        <h2>Fórmula de Bhaskara:</h2>
+        <div class="bodyContentContainer">
+            <form class="formContainer">
+                <div class="formOptionDiv">
+                    <label for="altura">
+                        Informe o coeficiente A: <br>
+                        <input type="number" placeholder="Ex: 2" id="coeA" min='0' step="1">
+                    </label>
+                </div>
+                <div class="formOptionDiv">
+                    <label for="altura">
+                        Informe o coeficiente B: <br>
+                        <input type="number" placeholder="Ex: 3" id="coeB" min='0' step="1">
+                    </label>
+                </div>
+                <div class="formOptionDiv">
+                    <label for="altura">
+                        Informe o coeficiente C: <br>
+                        <input type="number" placeholder="Ex: -5" id="coeC" min='0' step="1">
+                    </label>
+                </div>
+                <div class="formOptionDiv">
+                    <label>
+                        Número 1 [+]: <br>
+                        <input id="maisDisplay" type="text" disabled>
+                    </label>
+                </div>
+                <div class="formOptionDiv">
+                    <label>
+                        Número 2 [-]: <br>
+                        <input id="subDisplay" type="text" disabled>
+                    </label>
+                </div>
+                <div class="formOptionDiv">
+                    <button type="button" id="calcButton" onclick="calc()">Calcule</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
